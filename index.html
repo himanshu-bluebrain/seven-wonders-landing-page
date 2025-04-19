@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Wonders of the World</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 32px 16px;
+            border-bottom: 1px solid rgba(0, 176, 123, 0.48);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: #00B07B;
+        }
+        
+        p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .wonders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            padding: 32px 0;
+        }
+        
+        .wonder-card {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 176, 123, 0.48);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .wonder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 176, 123, 0.2);
+        }
+        
+        .wonder-image {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .wonder-content {
+            padding: 16px;
+        }
+        
+        .wonder-title {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #00B07B;
+        }
+        
+        .wonder-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .wonders-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Seven Wonders of the World</h1>
+            <p class="subtitle">Explore these magnificent monuments that showcase humanity's greatest architectural and cultural achievements</p>
+        </header>
+        
+        <div class="wonders-grid">
+            <div class="wonder-card">
+                <img src="https://fal.media/files/tiger/Nzg9YMr5c61rYJINHT9eA_6f1c30c591d045c4af54d0765e9e3f0d.jpg" alt="The Great Wall of China" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">The Great Wall of China</h2>
+                    <p class="wonder-description">The Great Wall of China with a dramatic sunset.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/panda/YdFfjMFJLaLH4Dljji6eM_84c49f94bc4c4443ad92187cc5026f5c.jpg" alt="Petra, Jordan" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">Petra, Jordan</h2>
+                    <p class="wonder-description">A picturesque view of Petra in Jordan showcasing its rock-carved architecture.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/zebra/AIBZm6JTkAZ-9paFkilnG_de67de2b4c6744c1bfdd8770e53af91c.jpg" alt="Christ the Redeemer, Brazil" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">Christ the Redeemer, Brazil</h2>
+                    <p class="wonder-description">Christ the Redeemer statue against the vibrant backdrop of Rio de Janeiro.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/penguin/URh_i3Fpq2QdLjdaUweeD_9ac6559f46934d059aaa132175db253b.jpg" alt="Machu Picchu, Peru" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">Machu Picchu, Peru</h2>
+                    <p class="wonder-description">A breathtaking view of Machu Picchu surrounded by lush green mountains.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/elephant/UmjoldUn3uFCeYJc_fnxk_728f88485707464ba07651775174c3b1.jpg" alt="Chichen Itza, Mexico" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">Chichen Itza, Mexico</h2>
+                    <p class="wonder-description">An artistic representation of Chichen Itza's pyramid with a moody sky.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/koala/VrAh6eVASXFOa5Ym7N2Ue_c794ab12aab3408596515ec56ca09f08.jpg" alt="The Taj Mahal, Agra" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">The Taj Mahal, Agra</h2>
+                    <p class="wonder-description">The Taj Mahal in Agra, India with reflections in the Yamuna River during sunrise.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/panda/4KN4QLaAJQ6fNQvzh2ZjD_a4fb2e6bb8a74c2b9a5a17c947858a77.jpg" alt="Colosseum, Italy" class="wonder-image">
+                <div class="wonder-content">
+                    <h2 class="wonder-title">Colosseum, Italy</h2>
+                    <p class="wonder-description">Colosseum in Rome, Italy with a vibrant golden sky at dusk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple lazy loading for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.wonder-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.borderColor = '#00B07B';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.borderColor = 'rgba(0, 176, 123, 0.48)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
